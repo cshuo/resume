@@ -1,13 +1,12 @@
-default: wyq-cn.pdf wyq-en.pdf resume.pdf
+default: cn en
 
-resume.pdf: wyq-en.pdf
-	cp $^ resume.pdf
-
-wyq-cn.pdf: wyq-cn.tex
+cn: cn.tex
 	xelatex $^
+	open cn.pdf
 
-wyq-en.pdf: wyq-en.tex
+en: en.tex
 	pdflatex $^
+	open en.pdf
 
 clean:
-	rm -rf *.pdf
+	rm -rf *.out *.aux *.log *.pdf

@@ -193,6 +193,7 @@
 %-------------------------------------------------------------------------------
 %                style commands definitions
 %-------------------------------------------------------------------------------
+
 % symbols used 
 \providecommand*{\listitemsymbol}{\Neutral}%{{\fontencoding{U}\fontfamily{ding}\selectfont\tiny\symbol{'102}}}
 \providecommand*{\addresssymbol}{}
